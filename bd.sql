@@ -61,11 +61,11 @@ INSERT INTO Dono_de_Pet VALUES(1);
 INSERT INTO USUARIO VALUES(2, 'Mateus', 'eu2@eu2.com',666, 'Rua Fonseca ', '4321@');
 INSERT INTO Veterinario VALUES(3999, '/RN', 2);
 
-INSERT INTO Pet VALUES(123, 'Menta', 2, 0.5,LOAD_FILE('fotospet/1.jpg'),"2020-01-12", NULL, 'burgues', 2.5, 0, 1);
+INSERT INTO Pet VALUES(123, 'Menta', 2, 0.5,LOAD_FILE('\fotospet\1.jpg'),"2020-01-12", NULL, 'burgues', 2.5, 0, 1);
 
 INSERT INTO Vacina VALUES('Nome estranho da vacina', 'Para raiva', "2021-12-25", NULL);
 INSERT INTO Aplicar VALUES(123, 'Nome estranho da vacina');
 
 UPDATE Pet 
-    SET foto_pet = LOAD_FILE('C:/Users/varel\Documents/UFRN/2021.1/Banco de Dados/CIP/fotospet/1.jpg')
+    SET foto_pet = LOAD_FILE('/fotospet/1.jpg')
     WHERE codigo_identificador=123;
