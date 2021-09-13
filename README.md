@@ -1,2 +1,2 @@
 # CIP
-API do projeto da disciplina Bando de Dados (DCA/UFRN)
+API do projeto da disciplina Banco de Dados (DCA/UFRN)
