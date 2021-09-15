@@ -1,0 +1,27 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "rest-api for SQL DB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasboot/CIP.git"
+  },
+  "keywords": [
+    "sql",
+    "node",
+    "mariadb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasboot/CIP/issues"
+  },
+  "homepage": "https://github.com/lucasboot/CIP#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
