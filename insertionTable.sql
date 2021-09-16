@@ -31,7 +31,17 @@ INSERT INTO Pet VALUES(8, 'Tutifruti', 3, 0.5,'facebook.com/image8','2018-01-12'
 
 
 /* INSERÇÕES VACINAS */
-INSERT INTO Vacina VALUES('Nome estranho da vacina', 'Para raiva', '2021-12-25', NULL);
+INSERT INTO Vacina VALUES('V8', 'Cinomose, Hepatite,...');
+INSERT INTO Vacina VALUES('Gripe Canina', 'Adenovirus Canino Tipo 2, Parainfluenza Canina, ...');
+INSERT INTO Vacina VALUES('Anti-rabica', 'Raiva');
+INSERT INTO Vacina VALUES('Giardiase', 'Indicada para animais de canis');
+INSERT INTO Vacina VALUES('Quadrupla Felina', '');
+
+
 
 /* INSERÇÕES APLICAÇÕES DE VACINA */
-INSERT INTO Aplicar VALUES(1, 'Nome estranho da vacina');
+INSERT INTO Aplicar VALUES(1, 'V8');
+INSERT INTO Aplicar VALUES(2, 'Gripe Canina');
+
+
+/* INSERÇÕES APLICAÇÕES DE CONSULTAS*/

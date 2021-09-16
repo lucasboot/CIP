@@ -43,13 +43,13 @@ CREATE TABLE IF NOT EXISTS Pet(
 CREATE TABLE IF NOT EXISTS Vacina(
     nome VARCHAR(100) PRIMARY KEY,
     tipo VARCHAR(50),
-    data_ap DATE,
-    data_prox DATE
 );
 
 CREATE TABLE IF NOT EXISTS Aplicar(
     codigo_Pet INT,
     codigo_Vacina VARCHAR(100),
+    data_ap DATE,
+    data_prox DATE,
     FOREIGN KEY (codigo_Pet) REFERENCES Pet(codigo_identificador),
     FOREIGN KEY (codigo_Vacina) REFERENCES Vacina(nome)
 );
