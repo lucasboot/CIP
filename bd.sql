@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS Pet(
     nome VARCHAR(200),
     idade SMALLINT,
     altura FLOAT,
-    foto_pet BLOB,
+    foto_pet VARCHAR(200),
     nascimento DATE,
     falecimento DATE,
     raca VARCHAR(100),
@@ -54,18 +54,15 @@ CREATE TABLE IF NOT EXISTS Aplicar(
     FOREIGN KEY (codigo_Vacina) REFERENCES Vacina(nome)
 );
 
-/* INSERÇÕES */
-INSERT INTO USUARIO VALUES(1, 'Lucas', 'eu@eu.com', 999, 'Rua Fonseca e Silva', '1234@');
-INSERT INTO Dono_de_Pet VALUES(1);
 
-INSERT INTO USUARIO VALUES(2, 'Mateus', 'eu2@eu2.com',666, 'Rua Fonseca ', '4321@');
-INSERT INTO Veterinario VALUES(3999, '/RN', 2);
+CREATE TABLE IF NOT EXISTS Consulta(
+    data_consulta DATE,
+    motivo VARCHAR(100),
+    diagnostico VARCHAR(1000),
+    tratamento VARCHAR(1000),
+    codigo_Pet INT,
+    codigo_Veterinario INT,
+    FOREIGN KEY (codigo_Pet) REFERENCES Pet(codigo_identificador),
+    FOREIGN KEY (codigo_Veterinario) REFERENCES Veterinario(codigo_Usuario)
+);
 
-INSERT INTO Pet VALUES(123, 'Menta', 2, 0.5,LOAD_FILE('\fotospet\1.jpg'),"2020-01-12", NULL, 'burgues', 2.5, 0, 1);
-
-INSERT INTO Vacina VALUES('Nome estranho da vacina', 'Para raiva', "2021-12-25", NULL);
-INSERT INTO Aplicar VALUES(123, 'Nome estranho da vacina');
-
-UPDATE Pet 
-    SET foto_pet = LOAD_FILE('/fotospet/1.jpg')
-    WHERE codigo_identificador=123;
