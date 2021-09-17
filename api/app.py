@@ -23,22 +23,13 @@ app = Flask(__name__)
 
 @app.route('/get_pets', methods=['GET'])
 def get_pets():
-    select_query = "SELECT * FROM Pets"
+    select_query = "SELECT * FROM Pet"
     return run_select_query(select_query)
 
 @app.route('/get_users', methods=['GET'])
 def get_user():
     select_query = "SELECT * FROM USUARIO "
     return run_select_query(select_query)
-
-@app.route('/add_user', methods=['POST'])
-def add_people_count():
-    print('Add user called!')
-    print('Request' + str(request.data))
-    insert_query = """INSERT INTO USUARIO VALUES(%s, %s, %s, %s, %s, %s)"""
-    request_data = request.get_json()
-    val = (request_data['CPF'],request_data['nome'],request_data['email'],request_data['telefone'],request_data['endereco'],request_data['senha'])
-    return run_insert_query(insert_query, val, 'USUARIO')   
 
 @app.route('/get_user', methods=['GET'])
 def get_people_count_per_collector():
@@ -47,14 +38,35 @@ def get_people_count_per_collector():
     select_query = "SELECT * FROM USUARIO WHERE CPF = \'"+cpf_user+"\'"
     return run_select_query(select_query)
 
-    recog_id = add_recognized(request_data)   
-    res = []
-    for name_id in name_ids:
-        insert_query = """INSERT IGNORE INTO PeopleRecognized (id_recognized, id_people) VALUES (%s, %s)"""    
-        val = (recog_id, name_id)        
-        res.append(run_insert_query(insert_query, val, 'PeopleRecognized'))
+@app.route('/add_user', methods=['POST'])
+def add_user():
+    print('Add user called!')
+    print('Request' + str(request.data))
+    insert_query = """INSERT INTO USUARIO VALUES(%s, %s, %s, %s, %s, %s)"""
+    request_data = request.get_json()
+    val = (request_data['CPF'],request_data['nome'],request_data['email'],request_data['telefone'],request_data['endereco'],request_data['senha'])
+    return run_insert_query(insert_query, val, 'USUARIO')
 
-    return json.dumps(res)
+@app.route('/add_dono_de_pet', methods=['POST'])
+def add_dono_de_pet():
+    print('Add dono de pet called!')
+    print('Request' + str(request.data))
+    insert_query = """INSERT INTO USUARIO VALUES(%s, %s, %s, %s, %s, %s)"""
+    insert__dono_de_pet = """INSERT INTO Dono_de_Pet VALUES(%s)"""
+    request_data = request.get_json() 
+    val = (request_data['CPF'],request_data['nome'],request_data['email'],request_data['telefone'],request_data['endereco'],request_data['senha'])
+    print(run_insert_query(insert_query, val, 'USUARIO'))
+    val_pk = [(request_data['CPF'])]
+    return run_insert_query(insert__dono_de_pet, val_pk, 'Dono_de_Pet')
+
+@app.route('/add_pet', methods=['POST'])
+def add_pet():
+    print('Add dono de pet called!')
+    print('Request' + str(request.data))
+    insert_query = """INSERT INTO Pet VALUES(%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s);"""
+    request_data = request.get_json() 
+    val = (request_data['codigo_identificador'],request_data['nome'],request_data['idade'],request_data['altura'],request_data['foto_pet'],request_data['nascimento'],request_data['falecimento'],request_data['raca'],request_data['peso'],request_data['perdido'],request_data['codigo_Dono_de_Pet'])
+    return run_insert_query(insert_query, val, 'Pet')
 
 def add_people(name):
     insert_query = """INSERT IGNORE INTO People (name) VALUES (%s)"""    
