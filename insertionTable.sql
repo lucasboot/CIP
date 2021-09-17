@@ -57,10 +57,26 @@ INSERT INTO Aplicar VALUES(8, 'Anti-rabica', '2020-02-19', NULL);
 INSERT INTO Aplicar VALUES(8, 'Quadrupla Felina', '2020-06-11', NULL);
 
 
-
-
-
-
-/* INSERÇÕES APLICAÇÕES DE CONSULTAS*/
+/* INSERÇÕES DE CONSULTAS*/
 INSERT INTO Consulta VALUES ('2020-02-21', 'Coceira e vermelhidão', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 1, 1);
-INSERT INTO Consulta VALUES ('2019-02-15', 'Coceira e vermelhidão', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 1, 1);
+INSERT INTO Consulta VALUES ('2019-02-15', 'Coceira e vermelhidão', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 2, 1);
+INSERT INTO Consulta VALUES ('2021-05-15', 'Coceira e lesões pelas unhas', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 3, 1);
+INSERT INTO Consulta VALUES ('2020-05-15', 'Coceira e descamação na pele', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 4, 1);
+INSERT INTO Consulta VALUES ('2021-05-15', 'Febre, tosse', 'Erlichiose', 'remédios', 1, 1);
+INSERT INTO Consulta VALUES ('2020-02-05', 'Febre, tosse', 'Erlichiose', 'remédios', 2, 2);
+INSERT INTO Consulta VALUES ('2019-03-05', 'Febre, tosse', 'Erlichiose', 'remédios', 6, 3);
+INSERT INTO Consulta VALUES ('2020-02-20', 'Coceira e descamação na pele', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 6, 3);
+INSERT INTO Consulta VALUES ('2018-05-12', 'Coceira e descamação na pele', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 8, 2);
+INSERT INTO Consulta VALUES ('2020-07-10', 'Febre, tosse', 'Erlichiose', 'remédios', 5, 3);
+INSERT INTO Consulta VALUES ('2020-07-10', 'Febre, tosse', 'Erlichiose', 'remédios', 4, 2);
+INSERT INTO Consulta VALUES ('2015-07-10', 'Febre, tosse', 'Erlichiose', 'remédios', 7, 1);
+INSERT INTO Consulta VALUES ('2018-07-10', 'Perda de apetite', 'Insuficiência Renal', 'o objetivo é restabelecer o equilíbrio orgânico com uma dieta apropriada, isto é, pouco proteica, suplementos vitamínicos e terapia com fluidos e eletrólitos. ', 7, 3);
+
+
+
+
+
+
+
+
+
