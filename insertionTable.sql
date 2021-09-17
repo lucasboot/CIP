@@ -41,8 +41,20 @@ INSERT INTO Vacina VALUES('Quadrupla Felina', 'Auxiliar na prevenção das doen�
 
 
 /* INSERÇÕES APLICAÇÕES DE VACINA */
-INSERT INTO Aplicar VALUES(1, 'V8');
-INSERT INTO Aplicar VALUES(2, 'Gripe Canina');
+INSERT INTO Aplicar VALUES(1, 'V8', '2019-03-30', '2020-04-21');
+INSERT INTO Aplicar VALUES(1, 'Anti-rabica', '2019-02-18', '2020-02-15');
+INSERT INTO Aplicar VALUES(2, 'Gripe Canina', '2020-01-28', NULL);
+INSERT INTO Aplicar VALUES(3, 'Gripe Canina', '2018-07-22', '2020-05-17');
+INSERT INTO Aplicar VALUES(3, 'Quadrupla Felina', '2019-06-06', NULL);
+INSERT INTO Aplicar VALUES(4, 'Giardiase', '2020-06-11', NULL);
+INSERT INTO Aplicar VALUES(5, 'Anti-rabica', '2018-02-21', '2019-02-16', '2020-02-19');
+INSERT INTO Aplicar VALUES(5, 'V8', '2020-07-15', NULL);
+INSERT INTO Aplicar VALUES(6, 'Giardiase', '2020-08-20', NULL);
+INSERT INTO Aplicar VALUES(6, 'Anti-rabica', '2018-07-14', '2019-07-19', '2020-07-15');
+INSERT INTO Aplicar VALUES(7, 'Anti-rabica', '2020-09-21', NULL);
+INSERT INTO Aplicar VALUES(7, 'Gripe Canina', '2020-10-06', NULL);
+INSERT INTO Aplicar VALUES(8, 'Anti-rabica', '2020-02-19', NULL);
+INSERT INTO Aplicar VALUES(8, 'Quadrupla Felina', '2020-06-11', NULL);
 
 
 
