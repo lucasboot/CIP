@@ -35,7 +35,8 @@ INSERT INTO Vacina VALUES('V8', 'Cinomose, Hepatite,...');
 INSERT INTO Vacina VALUES('Gripe Canina', 'Adenovirus Canino Tipo 2, Parainfluenza Canina, ...');
 INSERT INTO Vacina VALUES('Anti-rabica', 'Raiva');
 INSERT INTO Vacina VALUES('Giardiase', 'Indicada para animais de canis');
-INSERT INTO Vacina VALUES('Quadrupla Felina', '');
+INSERT INTO Vacina VALUES('Quadrupla Felina', 'Auxiliar na prevenção das doenças causadas por vírus da Rinotraqueite, ...');
+
 
 
 
@@ -44,4 +45,10 @@ INSERT INTO Aplicar VALUES(1, 'V8');
 INSERT INTO Aplicar VALUES(2, 'Gripe Canina');
 
 
+
+
+
+
 /* INSERÇÕES APLICAÇÕES DE CONSULTAS*/
+INSERT INTO Consulta VALUES ('2020-02-21', 'Coceira e vermelhidão', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 1, 1);
+INSERT INTO Consulta VALUES ('2019-02-15', 'Coceira e vermelhidão', 'Alergia alimentar', 'substitua a ração de sempre por fórmulas especiais. Se o animal é muito alérgico, opte por refeições caseiras, mas aí sempre bem orientadas pelo veterinário', 1, 1);
