@@ -8,6 +8,7 @@ INSERT INTO USUARIO VALUES(5, 'Adson', 'eu5@eu.com', 555, 'Rua Fonseca e Silva',
 INSERT INTO USUARIO VALUES(6, 'Gabriel', 'eu6@eu.com',666, 'Avenida Rio Branco ', '432122@');
 INSERT INTO USUARIO VALUES(7, 'William', 'eu7@eu.com', 777, 'Cidade Verde', '321422@');
 INSERT INTO USUARIO VALUES(8, 'Thomas', 'eu8@eu2.com',888, 'Prudente de Morais', '432213@');
+INSERT INTO USUARIO VALUES(9, 'Amanda', 'eu9@eu2.com',999, 'Prudente de Morais', '432212');
 
 /* INSERÇÕES DONOS DE PET E VETERINÁRIOS */
 INSERT INTO Veterinario VALUES(0001, '/RN', 2);
@@ -18,6 +19,7 @@ INSERT INTO Dono_de_Pet VALUES(3);
 INSERT INTO Dono_de_Pet VALUES(5);
 INSERT INTO Dono_de_Pet VALUES(7);
 INSERT INTO Dono_de_Pet VALUES(8);
+INSERT INTO Dono_de_Pet VALUES(9);
 
 /* INSERÇÕES PETS */
 INSERT INTO Pet VALUES(1, 'Menta', 2, 0.5,'facebook.com/image1','2020-01-12', NULL, 'Bulldog', 2.5, 0, 1);
@@ -28,6 +30,8 @@ INSERT INTO Pet VALUES(5, 'Graviola', 10, 1.2,'facebook.com/image5','2011-01-12'
 INSERT INTO Pet VALUES(6, 'Morango', 15, 1.3,'facebook.com/image6','2006-01-12', NULL, 'Labrador', 10.1, 0, 8);
 INSERT INTO Pet VALUES(7, 'Chantily', 15, 1.3,'facebook.com/image7','2006-01-12', '2021-05-21', 'Labrador', 9.5, 0, 8);
 INSERT INTO Pet VALUES(8, 'Tutifruti', 3, 0.5,'facebook.com/image8','2018-01-12', NULL, 'Beagle', 9.5, 1, 8);
+INSERT INTO Pet VALUES(9, 'Esmeralda', 4, 0.5,'facebook.com/image9','2018-01-12', NULL, 'Gato Persia', 9.5, 0, 9);
+
 
 
 /* INSERÇÕES VACINAS */
