@@ -21,12 +21,13 @@ SELECT U.nome, P.nome
     WHERE D.codigo_Usuario = P.codigo_Dono_de_Pet AND U.CPF = D.codigo_Usuario;
 
 
-/*Lista de pets que os veterinários realizaram uma consulta*/
+/*Lista de pets que os veterinários realizaram uma consulta e os que ainda não realizaram consulta*/
 SELECT DISTINCT U.nome, P.nome 
     FROM Pet as P
-    JOIN (Veterinario as V,
+    LEFT JOIN (Veterinario as V,
           Usuario as U, Consulta C)
-    ON V.codigo_Usuario = U.CPF AND V.codigo_Usuario = C.codigo_Veterinario AND C.codigo_Pet = P.codigo_identificador;
+    ON V.codigo_Usuario = U.CPF AND V.codigo_Usuario = C.codigo_Veterinario AND C.codigo_Pet = P.codigo_identificador
+    ORDER BY U.nome ASC;
 
 /*Lista de pets que nasceram depois de 2010 OK*/
 SELECT P.nome, P.idade, P.raca
